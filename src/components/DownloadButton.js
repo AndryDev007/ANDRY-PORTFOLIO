@@ -5,6 +5,8 @@ import { FaDownload } from 'react-icons/fa';
 const DownloadButton = ({ fileUrl, fileName }) => {
   const handleDownload = async () => {
     try {
+      console.log(`Attempting to download file from: ${fileUrl}`);
+
       const response = await fetch(fileUrl, {
         method: 'GET',
         headers: {
@@ -13,7 +15,7 @@ const DownloadButton = ({ fileUrl, fileName }) => {
       });
 
       if (!response.ok) {
-        throw new Error('File not found');
+        throw new Error(`HTTP error! status: ${response.status}`);
       }
 
       const blob = await response.blob();
@@ -29,7 +31,7 @@ const DownloadButton = ({ fileUrl, fileName }) => {
         window.URL.revokeObjectURL(link.href);
       }, 100);
     } catch (error) {
-      console.error('Error downloading file:', error);
+      console.error('Error downloading file:', error.message);
       alert('Error downloading file. Please try again.');
     }
   };

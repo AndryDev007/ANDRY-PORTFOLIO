@@ -11,7 +11,7 @@ export const Banner = () => {
   const [index, setIndex] = useState(1);
   const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
   const period = 2000;*/
-  const fileUrl = '../assets/documents/CV_Andry_2024_English.pdf';
+  const fileUrl = '/documents/CV_Andry_2024_English.pdf';
   const fileName = 'CV_Andry_2024_English.pdf';
 /*
   useEffect(() => {
@@ -55,7 +55,7 @@ export const Banner = () => {
                 <span className="tagline">Welcome to my Portfolio</span>
                 <h1>Hi! I'm Andry, Project Manager and ReactJS Developper</h1>
                   <p  style={{ padding: '20px' }}>I have 9 years IT experiences. Almost of my professional projets are on content management and website design. I have lead team for the last 3 years.
-                    <br />For more details, you can download my CV <a href="{}">here</a>. <DownloadButton fileUrl={fileUrl} fileName={fileName} />
+                    <br />For more details, you can download my CV. <DownloadButton fileUrl={fileUrl} fileName={fileName} />
                   </p>
           </Col>
           <Col xs={12} md={6} xl={5}>
