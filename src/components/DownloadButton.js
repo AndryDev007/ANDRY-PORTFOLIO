@@ -3,18 +3,35 @@ import { Button } from 'react-bootstrap';
 import { FaDownload } from 'react-icons/fa';
 
 const DownloadButton = ({ fileUrl, fileName }) => {
-  const handleDownload = () => {
-    const link = document.createElement('a');
-    link.href = fileUrl;
-    link.download = fileName;
-    link.target = '_blank';
-    document.body.appendChild(link);
-    link.click();
+  const handleDownload = async () => {
+    try {
+      const response = await fetch(fileUrl, {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/octet-stream',
+        },
+      });
 
-    setTimeout(() => {
+      if (!response.ok) {
+        throw new Error('File not found');
+      }
+
+      const blob = await response.blob();
+      const link = document.createElement('a');
+      link.href = window.URL.createObjectURL(blob);
+      link.download = fileName;
+      link.target = '_blank';
+      document.body.appendChild(link);
+      link.click();
       document.body.removeChild(link);
-      window.URL.revokeObjectURL(link.href);
-    }, 100);
+
+      setTimeout(() => {
+        window.URL.revokeObjectURL(link.href);
+      }, 100);
+    } catch (error) {
+      console.error('Error downloading file:', error);
+      alert('Error downloading file. Please try again.');
+    }
   };
 
   return (
