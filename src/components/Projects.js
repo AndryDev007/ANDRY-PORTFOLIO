@@ -44,7 +44,7 @@ export const Projects = () => {
 
   return (
     <section className="project" id="projects">
-      <Container>
+      <Container fluid>
         <Row>
           <Col size={12}>
             <TrackVisibility>
