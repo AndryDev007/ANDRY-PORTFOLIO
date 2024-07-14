@@ -1,6 +1,8 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
+import meter95 from "../assets/img/meter95.svg";
+import meter80 from "../assets/img/meter80.svg";
+import meter70 from "../assets/img/meter70.svg";
+import meter75 from "../assets/img/meter75.svg";
+import meter60 from "../assets/img/meter60.svg";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 //import arrow1 from "../assets/img/arrow1.svg";
@@ -38,20 +40,32 @@ export const Skills = () => {
                         <p>I love challenging myself and testing new horizons.<br></br> "Listening is a master skill for personal and professional greatness." <br />Robin S. Sharma</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={meter1} alt="Example of a metter" />
-                                <h5>Web Development</h5>
+                                <img src={meter95} alt="metter 95%" />
+                                <h5>HTML</h5>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="Example of a metter" />
-                                <h5>Brand Identity</h5>
+                                <img src={meter80} alt="metter 80%" />
+                                <h5>CSS</h5>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="Example of a metter" />
-                                <h5>Logo Design</h5>
+                                <img src={meter80} alt="metter 80%" />
+                                <h5>JavaScript</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Example of a metter" />
-                                <h5>Web Development</h5>
+                                <img src={meter80} alt="metter 80%" />
+                                <h5>ReactJs</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter70} alt="metter 70%" />
+                                <h5>Node</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter60} alt="metter 60" />
+                                <h5>API</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter75} alt="metter 75%" />
+                                <h5>SQL</h5>
                             </div>
                         </Carousel>
                     </div>

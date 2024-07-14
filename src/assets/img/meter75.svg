@@ -1,0 +1,10 @@
+<svg width="204" height="204" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="400" cy="400" fill="none"
+    r="300" stroke-width="54" stroke="#e587ff"
+    stroke-dasharray="1400 1400"
+    stroke-linecap="round"
+    stroke-dashoffset="0" />
+    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" font-size="150" fill="#fff">
+    75%
+  </text>
+</svg>

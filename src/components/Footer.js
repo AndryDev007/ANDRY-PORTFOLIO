@@ -16,9 +16,9 @@ export const Footer = () => {
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">
-              <a href="https://www.linkedin.com/in/andry-fanomezana-rakotosamimanana-a25bb2109" target="_blank" rel="noopener noreferrer"><img src={navIcon1} alt="Icon1" /></a>
-              <a href="https://www.facebook.com/profile.php?id=100004056610560" target="_blank" rel="noopener noreferrer"><img src={navIcon2} alt="Icon2" /></a>
-              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img src={navIcon3} alt="Icon3" /></a>
+                <a href="https://www.linkedin.com/in/andry-fanomezana-rakotosamimanana-a25bb2109" target="_blank" rel="noopener noreferrer"><img src={navIcon1} alt="linkdin icon" /></a>
+                <a href="mailto:andryfanomezana77@gmail.com"><img src={navIcon2} alt="G Mail icon" /></a>
+                <a href="https://wa.me/qr/PZ7CDLN56SF6A1" target="_blank" rel="noopener noreferrer"><img src={navIcon3} alt="Whatsapp me icon" /></a>
             </div>
             <p>Copyright 2024. All Rights Reserved</p>
           </Col>
