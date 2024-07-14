@@ -1,15 +1,15 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
-import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
+//import { ProjectCard } from "./ProjectCard";
+/*import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import projImg3 from "../assets/img/project-img3.png";*/
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
 
-  const projects = [
+  /*const projects = [
     {
       title: "Business Startup",
       description: "Design & Development",
@@ -40,7 +40,7 @@ export const Projects = () => {
       description: "Design & Development",
       imgUrl: projImg3,
     },
-  ];
+  ];*/
 
   return (
     <section className="project" id="projects">
@@ -55,18 +55,19 @@ export const Projects = () => {
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                      <Nav.Link eventKey="first">Project Management</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                      <Nav.Link eventKey="second">Front End</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                      <Nav.Link eventKey="third">Back End / Database</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
-                      <Row>
+                    <p>Coming soon...</p>
+                      {/*<Row>
                         {
                           projects.map((project, index) => {
                             return (
@@ -77,13 +78,13 @@ export const Projects = () => {
                             )
                           })
                         }
-                      </Row>
+                      </Row>*/}
                     </Tab.Pane>
-                    <Tab.Pane eventKey="section">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                    <Tab.Pane eventKey="second">
+                    <p>Coming soon...</p>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                    <p>Coming soon...</p>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
