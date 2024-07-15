@@ -551,6 +551,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .contact form button::before {
   content: "";
+  color: #fff;
   background: #121212;
   width: 0;
   height: 100%;

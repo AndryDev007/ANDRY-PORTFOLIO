@@ -4,6 +4,7 @@ import emailjs from 'emailjs-com';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import contactImg from "../assets/img/contact-img.svg";
 
+
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -31,8 +32,10 @@ const ContactForm = () => {
       'B7BMmdAxfR7eBan8D'
     ).then((response) => {
       console.log('SUCCESS!', response.status, response.text);
+      alert('Thank you! Your message have been sent, you will received an email shortly.');
     }).catch((err) => {
       console.error('FAILED...', err);
+      alert('Something went wrong. Please try again later or contact via email directly.');
     });
 
     // Optionally reset the form
