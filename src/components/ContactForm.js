@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import emailjs from 'emailjs-com';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import contactImg from "../assets/img/contact-img.svg";
+//import contactImg from "../assets/img/contact.jpg";
 
 
 const ContactForm = () => {
@@ -55,7 +55,7 @@ const ContactForm = () => {
       <Container>
       <Row className="align-items-center">
           <Col size={12} md={6}>
-                <img src={contactImg} alt="Contact Us"/>
+                {/*<img src={contactImg} alt="Contact Us"/>*/}
           </Col>
           <Col size={12} md={6}>
           <h2>Get In Touch</h2>
